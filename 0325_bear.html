@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .eye {
+            height: 500px;
+            width: 500px;
+            background: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+
+        .eye::before {
+            content: "";
+            height: 75px;
+            width: 75px;
+            background: black;
+            position: absolute;
+            border: 15px solid white;
+            border-radius: 50%;
+            left: 18%;
+            top: 20%;
+        }
+
+        .eye::after {
+            content: "";
+            height: 75px;
+            width: 75px;
+            background: black;
+            position: absolute;
+            border: 15px solid white;
+            border-radius: 50%;
+            right: 18%;
+            top: 20%;
+        }
+
+        .ear {
+            height: 500px;
+            width: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+
+        .ear::before {
+            content: "";
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            top: 1%;
+            left: 6%;
+            border-radius: 50%;
+            border: 15px solid black;
+            background: white;
+
+        }
+
+        .ear::after {
+            content: "";
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            top: 1%;
+            right: 6%;
+            border-radius: 50%;
+            border: 15px solid black;
+            background: white;
+        }
+
+
+
+        .nose {
+            height: 130px;
+            width: 190px;
+            background: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+
+        .nose::before {
+            content: "";
+            width: 27%;
+            height: 27%;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .nose::after {
+            content: "";
+            width: 60%;
+            height: 35%;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .blush {
+            height: 500px;
+            width: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+
+        .blush::before {
+            content: "";
+            height: 130px;
+            width: 130px;
+            background: red;
+            position: absolute;
+            border-radius: 50%;
+            left: -5%;
+            top: 38%;
+        }
+
+        .blush::after {
+            content: "";
+            height: 130px;
+            width: 130px;
+            background: red;
+            position: absolute;
+            border-radius: 50%;
+            right: -5%;
+            top: 38%;
+        }
+
+        .v {
+            height: 500px;
+            width: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+
+
+        .v::before {
+            content: "";
+            height: 60px;
+            width: 65px;
+            display: inline-block;
+            background: white;
+            position: absolute;
+            bottom: 10%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+            transform: skewX(50deg);
+        }
+
+        .v::after {
+            content: "";
+            height: 60px;
+            width: 65px;
+            display: inline-block;
+            background: white;
+            position: absolute;
+            bottom: 10%;
+            right: 35%;
+            transform: translate(-50%, -50%);
+            transform: skewX(-50deg);
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="eye"></div>
+        <div class="ear"></div>
+        <div class="nose"></div>
+        <div class="blush"></div>
+        <div class="v"></div>
+    </div>
+</body>
+
+</html>
